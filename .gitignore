@@ -1,0 +1,9 @@
+.venv/
+alice_dataset/
+diffusers/
+sd-model-finetuned-lora/
+samples/*
+!samples/sample_99.png
+!samples/sample_115.png
+!samples/sample_124.png
+.idea/
