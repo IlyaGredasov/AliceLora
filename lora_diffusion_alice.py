@@ -27,7 +27,12 @@ pipe.to(device="cuda", dtype=torch.bfloat16)
 pipe.load_lora_weights(lora_dir, weight_name="pytorch_lora_weights.safetensors")
 pipe.fuse_lora()
 
-images = pipe("a photo of Alice", num_inference_steps=60, guidance_scale=5, num_images_per_prompt=5).images
+images = pipe(
+    "a photo of Alice",
+    num_inference_steps=60,
+    guidance_scale=5,
+    num_images_per_prompt=5,
+).images
 
 last_id = max(int(s.split("_")[1].split(".")[0]) for s in os.listdir("samples"))
 for i, img in enumerate(images):
