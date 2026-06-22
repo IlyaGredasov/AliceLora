@@ -29,7 +29,7 @@ pipe.fuse_lora()
 
 images = pipe(
     "a photo of Alice",
-    num_inference_steps=60,
+    num_inference_steps=50,
     guidance_scale=5,
     num_images_per_prompt=5,
 ).images
