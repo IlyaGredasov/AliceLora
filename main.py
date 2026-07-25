@@ -15,7 +15,6 @@
 import os
 
 import torch
-
 from diffusers import StableDiffusionXLPipeline
 
 base_model = "stabilityai/stable-diffusion-xl-base-1.0"
